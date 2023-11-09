@@ -1,0 +1,270 @@
+@charset "utf-8";
+/*  モバイル用  */
+.hamburger{
+    display: none;
+}
+/*　ローディング　*/
+.loader-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    color: #ffffff;
+    font-size: 90px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 72px auto;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  }
+  @-webkit-keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @-webkit-keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+
+/* ハンバーガーメニュー */
+.list h1{
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 1%;
+}
+.list h1 a{
+    color: white;
+    text-decoration: none;
+}
+.list h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px 0 40px 0;
+}
+.btn{
+    position:fixed;
+    top: 8px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+    background-color: skyblue; /* バックグラウンドカラー */
+}
+.btn i{
+    position: absolute;
+    left: 5px;
+    width: 25px;
+    height: 2px;
+    background-color: white; /* 線の色 */
+    transition: .5s;
+}
+.btn i:nth-of-type(1){
+    top: 12px;
+}
+.btn i:nth-of-type(2){
+    top: 20px;
+}
+.btn i:nth-of-type(3){
+    top: 28px;
+}
+.btn.active i:nth-of-type(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.btn.active i:nth-of-type(2){
+    opacity: 0;
+}
+.btn.active i:nth-of-type(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.block{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: -120%;
+    background-color: skyblue;
+    color: white;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: .2s;
+    z-index: 7;
+}
+.block.active{
+    left: -20%;
+    opacity: 1;
+    pointer-events: auto;
+}
+.list{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+}
+.list ul{
+    list-style:none;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    list-style: none;
+    padding: 0px;
+}
+.list li{
+    text-align: left;
+    font-size: 15px;
+    padding: 0px 0px 0px 15px;
+    line-height: 40px;
+}
+.list ul li h5{
+    margin-bottom:0px;
+}
+.list ul li a{
+    display: block;
+    color:white;
+    text-decoration:none;
+    font-size: 25px;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+.list ul li img{
+    width: 20px;
+    height: 20px;
+}
+
+/*  ここまで  */
+
+body{
+    margin: 0;
+}
+header{
+    background-color: skyblue;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    margin-bottom: 5px;
+    padding: 10px 0px 10px 0px;
+    top: 0;
+    z-index: 9;
+}
+header h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1%;
+}
+header h1 a{
+    color: white;
+    text-decoration: none;
+}
+.navbar{
+    margin: auto;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.navbar ul li{
+    margin:0px 80px 0px 80px;
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+    /*  モバイル用  */
+    .hamburger{
+        display: block;
+    }
+
+    header{
+        background-color: skyblue;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        padding: 5px 0px 5px 0px;
+        top: 0;
+        z-index: 9;
+    }
+    .navbar{
+        display: none;
+    }
+}

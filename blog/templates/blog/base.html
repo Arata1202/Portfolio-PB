@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="{% static 'CSS/base.css' %}">
+</head>
+<body>
+    <header id="home">
+        <h1><a id="link" href="javascript:void(0);" onclick="scrollToTop();"><strong>Portfolio</strong></a></h1>
+        
+        <!--　　　　　ページ内遷移メニュー　　　　　-->
+        <nav class="navbar">
+            <ul>
+                <li><a id="link_home" href="javascript:void(0);" onclick="scrollToTop();">Home</a></li>
+                <li><a id="link_about" href="javascript:void(0);" onclick="ScrollWindow('about');">About</a></li>
+                <li><a id="link_service" href="javascript:void(0);" onclick="ScrollWindow('service');">Service</a></li>
+                <li><a id="link_skills" href="javascript:void(0);" onclick="ScrollWindow('skills');">Skills</a></li>
+            </ul>
+        </nav>  
+        
+        <div class="hamburger"> <!--  モバイルnone  -->
+            <div class="btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>  
+            <div class="block">
+                <div class="list">
+                    <h1><a class="link_top" id="link_top" href="javascript:void(0);" onclick="scrollToTop();"><strong>Portfolio</strong></a></h1>
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><h5><a class="link_home" id="link_home" href="javascript:void(0);" onclick="scrollToTop();"><img src="/media/IMG_home.png" alt=""> Home</a></h5></li>
+                        <li style="padding-left: 0;"><hr></li>
+                        <li><h5><a class="link_about" id="link_about" href="javascript:void(0);" onclick="ScrollWindow('about');"><img src="/media/IMG_profile.png" alt=""> About</a></h5></li>
+                        <li style="padding-left: 0;"><hr></li>
+                        <li><h5><a class="link_service" id="link_service" href="javascript:void(0);" onclick="ScrollWindow('service');"><img src="/media/IMG_service.png" alt=""> Service</a></h5></li>
+                        <li style="padding-left: 0;"><hr></li>
+                        <li><h5><a class="link_skills" id="link_skills" href="javascript:void(0);" onclick="ScrollWindow('skills');"><img src="/media/IMG_skills.png" alt=""> Skills</a></h5></li>
+                        <li style="padding-left: 0;"><hr></li>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+    </header>
+
+    <script src="{% static 'JS/base.js' %}"></script>
+
+    <section class="section">
+        <div class="container">{% block content %} {% endblock %}</div>
+    </section>
+</body>
+</html>

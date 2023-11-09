@@ -1,0 +1,212 @@
+{% extends "blog/base.html" %} 
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'CSS/frontpage.css' %}">
+<link rel="stylesheet" href="{% static 'slick/slick.css' %}">
+<link rel="stylesheet" href="{% static 'slick/slick-theme.css' %}">
+
+<img class="top" src="/media/IMG_6171.jpg" alt="" style="width: 100%;">
+
+<!--　　　　　自己紹介　　　　　-->
+<h2 class="subtitle" id="about">About</h2>
+<div class="about">
+    <div class="about-s">
+        <div class="aboutpic">
+            <img src="/media/IMG_101.PNG" alt="">
+        </div>     
+        <div class="myname">
+            <h2 class="topname">Arata Takano / 高野　新</h2>
+            <p>千葉県在住の20歳。大学で消費者行動やマーケティングについて研究しています。2023年7月に、プログラミングに興味を持ち独学を開始したが、のめり込んでしまい、僅か1か月半でPHPを習得。今ではJavaやPythonなど様々な言語に挑み、日々スキルアップを図っています。よろしくお願いします。
+            </p>
+            <hr>
+            <p><a href="https://github.com/Arata1202" target="_blank"><b>GitHub</b></a> / <a href="mailto:s13202200279@toyo.jp" ><b>Mail</b></a> / <a href="https://www.instagram.com/ao_japantraveler/?hl=ja" target="_blank"><b>instagram</b></a></p>         
+        </div>
+    </div>
+
+    <!--　　　　　写真3枚　　　　　-->
+    <div class="underpic">
+        <div class="love">
+            <div class="lovepic">
+                <h2>Travel</h2>
+                <div class="loveimg">
+                    <div>   
+                        <img src="/media/IMG_3136.jpg" alt="">
+                        <p>国営ひたち海浜公園</p>
+                    </div>
+                    <div>
+                        <img src="/media/IMG_noboribetsu.jpg" alt="">
+                        <p>登別温泉</p>
+                    </div>
+                    <div>
+                        <img src="/media/IMG_ginzan.jpg" alt="">
+                        <p>銀山温泉</p>
+                    </div>
+                    <div>
+                        <img src="/media/IMG_shirakawa.jpg" alt="">
+                        <p>白川郷</p>
+                    </div>
+                    <div>
+                        <img src="/media/IMG_hirome.jpg" alt="">
+                        <p>ひろめ市場</p>
+                    </div>
+                </div>
+                <p>とにかく旅行が好きで、国内の温泉や有名な観光地へよく出掛けます。</p>
+            </div>
+        </div>
+        <div class="love-s">
+            <div class="lovepic">
+                <h2>Transportation</h2>
+                <div class="loveimg">
+                    <div>
+                        <img src="/media/IMG_3990.jpg" alt="">
+                        <p>松山空港</p>
+                    </div>
+                    <div>
+                        <img src="/media/IMG_densya.jpg" alt="">
+                        <p>日光・鬼怒川</p>
+                    </div>
+                    <div>
+                        <img src="/media/IMG_fune.jpg" alt="">
+                        <p>箱根</p>
+                    </div>
+                </div>
+                <p>飛行機や電車に乗って満喫したり、車を運転して遠出することも多いです。</p>
+            </div>
+        </div>
+        <div class="love">
+            <div class="lovepic">
+                <h2>Game</h2>
+                <div class="loveimg">
+                    <div>
+                        <img src="/media/IMG_3340.jpg" alt="">
+                        <p>ゲーム部屋</p>
+                    </div>
+                    <div>
+                        <img src="/media/IMG_desk2.jpg" alt="">
+                        <p>ライトアップ</p>
+                    </div>
+                    <div>
+                        <img src="/media/IMG_desk3.jpg" alt="">
+                        <p>ゲーム部屋</p>
+                    </div>
+                </div>
+                <p>休日は、ゲーミングPCやSwitchなどでよくゲームをしています。</p>
+            </div>
+        </div>
+    </div>
+    <div class="aboutline">
+        <hr>
+    </div>
+</div>
+
+<!--　　　　　サービス　　　　　-->
+<h2 class="subtitle" id="service">Service</h2>
+
+<div class="service">
+    <div class="topic">
+        <div class="servicepic">
+            <img src="/media/IMG_6184.PNG" alt="">
+        </div>
+        <div class="detail">
+            <h2>Travel Japan !</h2>
+            <p> 旅行好きユーザーがユーザー間で繋がり、日本の魅力について共有するアプリケーションです。主な機能だけでなく、個人情報や投稿内容のCRUD機能も実装しています。</p>
+            <br>
+            <p><b>・フロントエンド :</b> HTML , CSS , JavaScript</p>
+            <p><b>・バックエンド :</b> PHP , MySQL</p>
+            <p><b>・リンク :</b> <a href="https://github.com/Arata1202/Travel-Japan-" target="_blank"><b>GitHub</b></a></p>
+        </div>
+    </div>
+    
+    <!--　　　　　クリックヒア！　　　　　-->
+    <div class="detail_btn">
+        <h3>Travel Japan ! : </h3>
+        <a href="https://travel.aratasportfolio.com/home.html" target="_blank">Click Here !</a>
+    </div>
+    <br>
+    <div class="topic">
+        <div class="servicepic-s">
+            <img src="/media/IMG_6185.jpg" alt="">
+        </div>
+        <div class="detail">
+            <h2>Portfolio</h2>
+            <p>Java , SpringBootで開発するか、Python , Djangoで開発するか迷いましたが、最近はPythonが流行ってきているということでDjangoを選びました。このポートフォリオはAWSにデプロイしています。</p>
+            <br>
+            <p><b>・フロントエンド :</b> HTML , CSS , JavaScript , jQuery</p>
+            <p><b>・バックエンド :</b>  Python , Django , AWS , SQLite</p>
+            <p><b>・リンク :</b> <a href="https://github.com/Arata1202/portfolio" target="_blank"><b>GitHub</b></a></p>
+        </div>
+    </div>
+
+    <div class="serviceline">
+        <hr>
+    </div>
+</div>
+
+<!--　　　　　スキル　　　　　-->
+<h2 class="subtitle" id="skills">Skills</h2>
+<div class="skills">
+    ※実務経験はありません。今までに個人で行った内容を記載しています。
+    <div class="skill">
+        <h2>Frontend</h2>
+        <img src="/media/IMG_6258.jpg" alt="" width="57%">
+        <p>・<b>HTML & CSS :</b> Webアプリのコーディング , レスポンシブデザイン</p>
+        <p>・<b>JavaScript :</b> Webアプリ開発</p>
+        <p>・<b>Django :</b> Portfolioの作成</p>
+        <p>・<b>jQuery :</b> Portfolioに導入</p>
+    </div>
+    <div class="skill">
+        <h2>Backend</h2>
+        <img src="/media/IMG_30.jpg" alt="" width="91.7%">
+        <p>・<b>PHP , MySQL :</b> Travel Japan ! の開発</p>
+        <p>・<b>Python :</b> Webスクレイピング , Excel自動化 , 画像認識</p>
+        <p>・<b>Java , SpringBoot :</b> Webアプリ開発</p>
+        <p>・<b>AWS :</b> Portfolioのデプロイ</p>
+        <p>・<b>R :</b> 大学で扱いました</p>
+    </div>
+    <div class="skill">
+        <h2>Tools</h2>
+        <img src="/media/IMG_6176.png" alt="" width="81.5%">
+        <p>・<b>VSCode :</b> Webアプリ開発</p>
+        <p>・<b>Git , GitHub :</b> ソースコードの管理</p>
+        <p>・<b>Linux :</b> RaspberryPi4にUbuntu環境構築</p>
+        <p>・<b>Eclips :</b> SpringBootの開発</p>
+        <p>・<b>WordPress :</b> ブログの作成</p>
+    </div>
+</div>
+
+<footer>
+    <p>2023</p>
+</footer>
+
+<!--     jQuery     -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.loveimg').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                swipe: true,
+                pauseOnHover: false,
+                pauseOnDotsHover: false,
+            });
+        });
+
+        $(function(){
+            $(window).on('load',function(){
+                $('.loader').delay(500).fadeOut(500);
+                $('.loader-bg').delay(800).fadeOut(700);
+            });
+            setTimeout(function(){
+                $('.loader-bg').fadeOut(500);
+            },5000);
+        });
+    </script>
+
+    <script src="{% static 'JS/frontpage.js' %}"></script>
+    
+{% for post in posts %}
+{% endfor %}
+{% endblock %}
